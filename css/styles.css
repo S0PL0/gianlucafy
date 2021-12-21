@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 40px;
 }
 
 *,
@@ -95,7 +97,7 @@ a {
 
 /* Badges */
 .badge {
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   font-size: 2rem;
   font-weight: 700;
   padding: 0.5rem 2rem;
@@ -180,7 +182,7 @@ a {
 
 /* Buttons */
 .button {
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   border-style: none;
   cursor: pointer;
   font-size: 1.8rem;
@@ -244,15 +246,32 @@ a {
 
 /* Inputs */
 .input {
-  border-radius: 30px;
-  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
   color: var(--color-headings);
+  outline: 0;
   font-size: 2rem;
   padding: 1.5rem 3.5rem;
 }
 
 ::placeholder {
   color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 50px var(--color-border);
+  display: flex;
+}
+
+.input-group .input {
+  border: none;
+  flex-grow: 1;
+}
+
+.input-group .button {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
