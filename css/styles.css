@@ -505,14 +505,14 @@ a {
   border-radius: 5px;
 }
 
-.callout .button {
-  justify-self: center;
-  align-self: center;
-}
-
 .callout--primary {
   background-color: var(--color-primary);
   color: #fff;
+}
+
+.callout .button {
+  justify-self: center;
+  align-self: center;
 }
 
 .callout__content {
@@ -526,7 +526,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .grid--1x2 {
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
 
@@ -537,9 +537,5 @@ a {
   .callout .button {
     justify-self: start;
     margin: 0 2rem;
-  }
-
-  .callout__header {
-    font-size: 2.7rem;
   }
 }
