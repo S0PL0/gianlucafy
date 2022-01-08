@@ -637,7 +637,7 @@ a {
 }
 
 .nav.collapsible--expanded .nav__toggler {
-  fill: #fff;
+  opacity: 1;
   box-shadow: 0 0 0 3px #7b858b;
 }
 
