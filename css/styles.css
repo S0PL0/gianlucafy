@@ -26,7 +26,7 @@ img {
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -211,11 +211,18 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
   transition: all 0.2s;
+}
+
+.button .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.1rem;
+  vertical-align: middle;
 }
 
 .button--primary {
@@ -296,6 +303,8 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
+  padding: 1.5rem 0 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .button {
@@ -689,7 +698,7 @@ a {
   }
 }
 
-/* Heros */
+/* Hero */
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -707,5 +716,30 @@ a {
 @media screen and (min-width: 1024px) {
   .hero {
     padding-top: 0;
+  }
+}
+
+/* Domain Block */
+.domain-block .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  max-width: 670px;
+  margin: 4rem auto;
+  border: none;
+}
+
+.domain-block__prices {
+  color: var(--color-headings);
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .domain-block__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
