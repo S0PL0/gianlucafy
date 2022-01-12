@@ -440,6 +440,18 @@ a {
   margin-top: 0;
 }
 
+.media--verticle.media {
+  flex-direction: column;
+}
+
+.media--verticle .media__image {
+  margin-bottom: 1.5rem;
+}
+
+.media--verticle .media__body {
+  margin-left: 0;
+}
+
 /* Quotes */
 .quote {
   font-size: 3rem;
@@ -777,5 +789,25 @@ a {
 @media screen and (min-width: 768px) {
   .block-plans .card {
     max-width: 500px;
+  }
+}
+
+/* Feature Block */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature .media__title {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
 }
