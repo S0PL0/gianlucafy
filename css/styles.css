@@ -679,6 +679,11 @@ a {
   margin: 0 auto;
 }
 
+/* Entire Website */
+.main {
+  overflow: hidden;
+}
+
 /* Navigation Bar */
 .nav {
   background-color: #000;
