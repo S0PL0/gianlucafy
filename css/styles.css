@@ -629,7 +629,7 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 5rem;
+  --padding-vertical: 10rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -829,21 +829,21 @@ a {
 }
 
 /* Feature Block */
-.feature {
+.feature__article {
   gap: 4rem 2rem;
   margin: 12rem 0;
 }
 
-.feature:first-of-type {
+.feature__article:first-of-type {
   margin-top: 6rem;
 }
 
-.feature .media__title {
+.feature__article .media__title {
   font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-  .feature:nth-of-type(odd) .feature__content {
+  .feature__article:nth-of-type(even) .feature__content {
     order: 2;
   }
 }
